@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff appraisal</title>
+    <link rel="shortcut icon" href="images/light-bulb.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="brand-logo">Staff appraisal</li>
+                <li class="right out block"><a class="modal-trigger" data-target="modal-login">login</a></li>
+                <li class="right in logout block"><a href="">logout</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+    <div class="out container block">
+        <h4 class="center hello">hello, Login to continue</h4>
+        <div class="container center">
+            <img src="images/hello.png" alt="" class="center hello_img responsive-img ">
+        </div>
+    </div>
+
+    <div class="modal" id="modal-login">
+        <div class="modal-content container login">
+          <div class="tit">
+            <h5 class="center">Login</h5>
+          </div>
+            <form id="login-form">
+              <div class="input-field">
+                <input type="email" id="login-email" required>
+                <label for="login-email" >E-mail</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="login-password" required>
+                <label for="login-Password " >Password</label>
+              </div>
+              <div class="container lerrmsg center"></div>
+              <div class="center">
+                <button class="b_login btn-small red lighten-1">login</button>
+              </div>
+              
+            </form>
+        </div>
+        <div class="modal-content container signup block">
+          <div class="tit">
+            <h5 class="center ">Sign Up</h5>
+          </div>
+          
+            <form id="Signup-form">
+              <div class="input-field">
+                <input type="text" id="signup-name" required>
+                <label for="signup-name " >Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="signup-email" required>
+                <label for="signup-email " >E-mail</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="signup-password" required>
+                <label for="signup-Password " >Password</label>
+              </div>
+              <div class="container serrmsg center"></div>
+              <div class="center">
+                <button class="b_signup btn-small red  lighten-1">signup</button>
+              </div>
+              
+            </form>
+        </div>
+        <div class="container change-option"><p class="grey-text center">Not registered?<span class="red-text chngbtn text-lighten-1"> SignUp</span> </p></div>
+      </div>
+
+<div class="row in">
+  <div class="col l8 offset-l1">
+    <div class="container center">
+      <div class=" l_w">
+        <h4 class="center">Staff List</h4>
+        <hr style="width:400px;">
+        <ul class="center list_wrapper ">
+
+        </ul>
+      </div>
+  </div>
+
+  </div>
+  <div class="col l2 r_w">
+    <div>
+      <h4>
+        Welcome,<br><span class="my_name"></span>
+      </h4>
+    </div>
+    <br>
+    <h5>Your gems</h5>
+    <h3 class="my_gems grey-text text-darken-1"></h3>
+  </div>
+</div>
+      
+
+
+
+
+      <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+      <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+      <script src="/__/firebase/init.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+      <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCF08c4k16NeDC6ybpySAyLf4UuWLfrdbk",
+          authDomain: "feedback-7d959.firebaseapp.com",
+          databaseURL: "https://feedback-7d959.firebaseio.com",
+          projectId: "feedback-7d959",
+          storageBucket: "feedback-7d959.appspot.com",
+          messagingSenderId: "40464092111",
+          appId: "1:40464092111:web:a5d3b8f20aebe0e41fa0ba",
+          measurementId: "G-2CV7EP22WN"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth=firebase.auth();
+        const db=firebase.firestore();
+        
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+ 
+      <script src="index.js"></script>   
+</body>
+</html>

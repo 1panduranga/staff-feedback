@@ -1,0 +1,31 @@
+.g{
+    width:100px;
+}
+label,span,p{
+    color: black;
+    text-align: left;
+}
+.q label{
+    padding:10px;
+
+}
+.q p{
+    padding:5px;
+    margin-bottom: 10px;
+}
+.submit{
+margin:30px 10px 20px 70px;
+}
+.surr{
+    padding:30px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px auto;
+}
+body{
+    background-color: rgb(217, 230, 255);
+}
+#gems{
+    width:300px;
+    text-align: left;
+    }

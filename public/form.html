@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff appraisal - feedback</title>
+    <link rel="shortcut icon" href="images/light-bulb.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="brand-logo">Staff appraisal</li>
+                <li class="right in log"><a href="">logout</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+<div class="container center">
+  <h4 class="center">Give your Feed back for this week</h4>
+    <div class="container surr ">
+        <form id="form">
+
+<div class="q">
+  <label  for="q1"><h6>1. How well did you understand this topic?</h6></label>
+  <p>
+   <label>
+     <input name="q1" type="radio" value="Excellent"  />
+     <span>Excellent</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q1" type="radio" value="Good"/>
+     <span>Good</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q1" type="radio" value="Fair" />
+     <span>Fair</span>
+   </label>
+</p>
+<p>
+   <label>
+       <input name="q1" type="radio" value="Poor" />
+       <span>Poor</span>
+     </label>
+ </p> 
+ 
+</div>
+       
+
+
+<div class="q">
+  <label for="q2"><h6>2. What's the level of Interaction of Faculty?</h6></label>
+  <p>
+   <label>
+     <input name="q2" type="radio" value="Excellent"  />
+     <span>Excellent</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q2" type="radio" value="Good"/>
+     <span>Good</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q2" type="radio" value="Fair" />
+     <span>Fair</span>
+   </label>
+</p>
+<p>
+   <label>
+       <input name="q2" type="radio" value="Poor" />
+       <span>Poor</span>
+     </label>
+ </p>  
+</div>
+
+      
+<div class="q">
+  <label for="q3"><h6>3. What's the level of knowledge of faculty over this topic?</h6></label>
+  <p>
+   <label>
+     <input name="q3" type="radio" value="Excellent"  />
+     <span>Excellent</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q3" type="radio" value="Good"/>
+     <span>Good</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q3" type="radio" value="Fair" />
+     <span>Fair</span>
+   </label>
+ </p>
+ <p>
+   <label>
+       <input name="q3" type="radio" value="Poor" />
+       <span>Poor</span>
+     </label>
+ </p>  
+</div>
+
+
+
+     
+<div class="q">
+  <label for="q4"><h6>4. How useful are resources provided by faculty?</h6></label>
+  <p>
+   <label>
+     <input name="q4" type="radio" value="Excellent"  />
+     <span>Excellent</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q4" type="radio" value="Good"/>
+     <span>Good</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q4" type="radio" value="Fair" />
+     <span>Didn't Provide Any</span>
+   </label>
+  </p>
+  <p>
+   <label>
+       <input name="q4" type="radio" value="Poor" />
+       <span>Not Necessary</span>
+     </label>
+ </p>  
+
+</div>
+   
+
+<div class="q">
+  <label for="q5"><h6>5. Are your doubts got clarified?</h6></label>
+  <p>
+   <label>
+     <input name="q5" type="radio" value="Yes completely"  />
+     <span>Yes completely</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q5" type="radio" value=" Not completely"/>
+     <span> Not completely</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q5" type="radio" value="Not at all" />
+     <span>Not at all</span>
+   </label>
+</p>
+<p>
+   <label>
+       <input name="q5" type="radio" value="No doubts" />
+       <span>No doubts</span>
+     </label>
+ </p>  
+</div>
+   
+<div class="q">
+  <label for="q6"><h6>6. How much do you think staff improved over last week?</h6></label>
+  <p>
+   <label>
+     <input name="q6" type="radio" value="Much Significant"  />
+     <span>Much Significant</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q6" type="radio" value=" Rectified some mistakes"/>
+     <span> Rectified some mistakes</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input name="q6" type="radio" value="No Change at all" />
+     <span>No Change at all</span>
+   </label>
+</p>
+<p>
+   <label>
+       <input name="q6" type="radio" value="No change needed" />
+       <span>No change needed</span>
+     </label>
+ </p>  
+       <label for="gems"><h6>7. How many gems do you offer this teacher (1-25) ?</h6></label><br>
+       <input type="number" id="gems" name="gems" class="left">
+     
+</div>
+  
+        
+        <button class=" btn-small submit red lighten-1"> submit</button>          
+            </form>
+    </div>
+  
+</div>
+   
+
+
+
+      <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+      <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+      <script src="/__/firebase/init.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+      <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCF08c4k16NeDC6ybpySAyLf4UuWLfrdbk",
+          authDomain: "feedback-7d959.firebaseapp.com",
+          databaseURL: "https://feedback-7d959.firebaseio.com",
+          projectId: "feedback-7d959",
+          storageBucket: "feedback-7d959.appspot.com",
+          messagingSenderId: "40464092111",
+          appId: "1:40464092111:web:a5d3b8f20aebe0e41fa0ba",
+          measurementId: "G-2CV7EP22WN"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth=firebase.auth();
+        const db=firebase.firestore();
+        
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+      <script src="form.js"></script>
+     
+</body>
+</html>

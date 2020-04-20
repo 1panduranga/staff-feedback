@@ -1,0 +1,64 @@
+.hello{
+    margin:60px;
+}
+.hello_img{
+    height: 400px;
+    width:400px;
+}
+.block
+{
+    display:none;
+}
+.modal{
+ border-radius: 20px;
+ width:600px;
+}
+.chngbtn{
+    cursor: pointer;
+}
+.tit
+{
+    margin:20px auto 40px auto;
+}
+.my_gems
+{
+    margin:0px 10px;
+}
+.l_w{
+
+    margin:60px auto;
+    border:rgb(175, 174, 174) 1px solid;
+    border-radius: 20px;
+    padding:20px;
+    
+}
+.r_w{
+    margin:40px auto;
+    
+}
+.emo:hover{
+    background-color: rgb(243, 243, 243);
+}
+.gems{
+    position:absolute;
+    font-size:1.5em;
+    margin:-30px -250px 30px 250px;
+    text-align:end;
+    background-color: rgb(252, 252, 170);
+    right:50%;
+    border-radius: 15px;
+    padding:10px;
+}
+.emo{
+    position: relative;
+ margin:10px;
+ padding:5px 50px;
+ border-radius: 20px;
+ text-align: justify;
+
+ 
+}
+.emo:hover{
+    cursor: pointer;
+    
+}
